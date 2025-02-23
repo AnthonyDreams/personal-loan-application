@@ -1,0 +1,29 @@
+services:
+  api:
+    build: .
+    ports:
+      - "3000:3000"
+      - "9229:9229"  # Debug port
+    depends_on:
+      - postgresdb
+    volumes:
+      - .:/usr/src/app
+      - node_modules:/usr/src/app/node_modules
+    env_file:
+      - ./.env
+    restart: always
+
+  postgresdb:
+    image: postgres
+    restart: always
+    ports:
+      - '5432:5432'
+    volumes:
+      - personal_loan_db_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: database
+
+volumes:
+  personal_loan_db_data:
+  node_modules:

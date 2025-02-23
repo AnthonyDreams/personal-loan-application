@@ -1,0 +1,102 @@
+.
+├── Dockerfile
+├── README.md
+├── docker-compose.yml
+├── folder_structure.txt
+├── nest-cli.json
+├── package-lock.json
+├── package.json
+├── prisma
+│   ├── migrations
+│   │   ├── 20250222231713_init
+│   │   │   └── migration.sql
+│   │   └── migration_lock.toml
+│   └── schema.prisma
+├── src
+│   ├── app.module.ts
+│   ├── auth
+│   │   ├── auth.module.ts
+│   │   ├── controllers
+│   │   │   ├── auth.controller.spec.ts
+│   │   │   └── auth.controller.ts
+│   │   ├── dto
+│   │   │   └── request
+│   │   │       ├── login.request.ts
+│   │   │       └── register-user-request.ts
+│   │   ├── exception
+│   │   │   ├── email-already-used.exception.ts
+│   │   │   └── user-no-admin-exception.ts
+│   │   ├── guards
+│   │   │   ├── admin.guard.ts
+│   │   │   └── jwt-auth.guard.ts
+│   │   ├── interfaces
+│   │   │   └── auth.interface.ts
+│   │   ├── services
+│   │   │   ├── auth.service.spec.ts
+│   │   │   └── auth.service.ts
+│   │   └── strategies
+│   │       ├── jwt.strategy.ts
+│   │       └── local.strategy.ts
+│   ├── loan
+│   │   ├── controllers
+│   │   │   ├── admin.loan.controller.ts
+│   │   │   ├── loan.controller.spec.ts
+│   │   │   └── loan.controller.ts
+│   │   ├── dto
+│   │   │   ├── request
+│   │   │   │   ├── admin-update-loan-status.request.ts
+│   │   │   │   └── request-loan.request.ts
+│   │   │   └── response
+│   │   │       ├── loan.response.ts
+│   │   │       ├── loans.response.ts
+│   │   │       └── request-loan.response.ts
+│   │   ├── exception
+│   │   │   ├── cannot-update-loan-status.exception.ts
+│   │   │   └── loan-not-found.exception.ts
+│   │   ├── loan.module.ts
+│   │   └── services
+│   │       ├── loan.service.spec.ts
+│   │       └── loan.service.ts
+│   ├── main.ts
+│   ├── payment
+│   │   ├── dto
+│   │   │   ├── request
+│   │   │   │   └── create-payment.request.ts
+│   │   │   └── response
+│   │   │       ├── payment.response.ts
+│   │   │       └── payments.response.ts
+│   │   ├── exception
+│   │   │   ├── cannot-register-payment.exception.ts
+│   │   │   ├── payment-amount-exceeds-loan-remaining-balance.exception.ts
+│   │   │   └── payment-not-found.exception.ts
+│   │   ├── payment.controller.spec.ts
+│   │   ├── payment.controller.ts
+│   │   ├── payment.module.ts
+│   │   ├── payment.service.spec.ts
+│   │   └── payment.service.ts
+│   └── shared
+│       ├── decorators
+│       │   ├── authenticated-user.decorators.ts
+│       │   └── public.decorator.ts
+│       ├── dto
+│       │   ├── api-response.dto.ts
+│       │   ├── params
+│       │   │   └── find-one.params.ts
+│       │   └── query
+│       │       └── pagination.ts
+│       ├── pipes
+│       │   └── zod-validation.pipe.ts
+│       ├── prisma.service.ts
+│       └── utils
+│           └── paginator.ts
+├── test
+│   ├── admin.loan.e2e-spec.ts
+│   ├── auth.e2e-spec.ts
+│   ├── jest-e2e.json
+│   ├── loan.e2e-spec.ts
+│   ├── payment.e2e-spec.ts
+│   └── setup.ts
+├── tsconfig.build.json
+└── tsconfig.json
+
+33 directories, 66 files
