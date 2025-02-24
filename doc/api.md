@@ -254,11 +254,76 @@ This API enables users to register, log in, request loans, view loan details, up
 
   ```json
   {
-    "page": 4,
-    "payments": [
-      { "payment_id": 11, "amount_paid": 1, "date": "2025-02-23T12:34:56Z" },
-      { "payment_id": 12, "amount_paid": 1, "date": "2025-02-23T13:00:00Z" }
-    ]
+    "data": [
+      {
+        "id": 9,
+        "amount_paid": 200.5,
+        "payment_date": "2025-02-23T05:54:52.326Z",
+        "created_at": "2025-02-23T05:54:52.326Z"
+      },
+      {
+        "id": 10,
+        "amount_paid": 1,
+        "payment_date": "2025-02-23T05:57:33.293Z",
+        "created_at": "2025-02-23T05:57:33.293Z"
+      },
+      {
+        "id": 11,
+        "amount_paid": 1,
+        "payment_date": "2025-02-23T05:57:33.965Z",
+        "created_at": "2025-02-23T05:57:33.965Z"
+      },
+      {
+        "id": 12,
+        "amount_paid": 1,
+        "payment_date": "2025-02-23T05:57:34.536Z",
+        "created_at": "2025-02-23T05:57:34.536Z"
+      },
+      {
+        "id": 13,
+        "amount_paid": 1,
+        "payment_date": "2025-02-23T05:57:35.220Z",
+        "created_at": "2025-02-23T05:57:35.220Z"
+      },
+      {
+        "id": 14,
+        "amount_paid": 1,
+        "payment_date": "2025-02-23T05:57:35.868Z",
+        "created_at": "2025-02-23T05:57:35.868Z"
+      },
+      {
+        "id": 15,
+        "amount_paid": 1,
+        "payment_date": "2025-02-23T05:57:36.539Z",
+        "created_at": "2025-02-23T05:57:36.539Z"
+      },
+      {
+        "id": 16,
+        "amount_paid": 1,
+        "payment_date": "2025-02-23T05:57:37.175Z",
+        "created_at": "2025-02-23T05:57:37.175Z"
+      },
+      {
+        "id": 17,
+        "amount_paid": 1,
+        "payment_date": "2025-02-23T05:57:37.843Z",
+        "created_at": "2025-02-23T05:57:37.843Z"
+      },
+      {
+        "id": 18,
+        "amount_paid": 1,
+        "payment_date": "2025-02-23T05:57:38.473Z",
+        "created_at": "2025-02-23T05:57:38.473Z"
+      }
+    ],
+    "meta": {
+      "total": 37,
+      "lastPage": 4,
+      "currentPage": 1,
+      "perPage": 10,
+      "prevPage": null,
+      "nextPage": 2
+    }
   }
   ```
 
